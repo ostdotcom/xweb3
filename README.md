@@ -1,2 +1,2 @@
 # xweb3
-Extended web3
+Ethereum interaction layer using extended version of web3.

@@ -1,0 +1,45 @@
+{
+  "name": "@ostdotcom/base",
+  "version": "1.0.0",
+  "description": "OST Base provides advanced blockchain interaction capabilities and other utilities.",
+  "main": "index.js",
+  "scripts": {
+    "pre-commit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ostdotcom/base.git"
+  },
+  "keywords": [
+    "OpenST",
+    "OST",
+    "Simple Token",
+    "OST Base"
+  ],
+  "author": "OST.com Inc.",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ostdotcom/base/issues"
+  },
+  "homepage": "https://github.com/ostdotcom/base#readme",
+  "dependencies": {
+    "shortid": "2.2.13",
+    "web3": "1.0.0-beta.37"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "lint-staged": "8.0.3",
+    "mocha": "5.2.0",
+    "pre-commit": "1.2.2",
+    "prettier": "1.14.3"
+  },
+  "pre-commit": [
+    "pre-commit"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --config .prettierrc.json",
+      "git add"
+    ]
+  }
+}
