@@ -7,8 +7,7 @@ sudo: required
 branches:
   only:
   - master
-  - develop
-  - /^release-.*/
+  - test_cases_fix
 notifications:
   email:
     recipients:
@@ -29,7 +28,7 @@ before_install:
 install:
   - npm install
 before_script:
-    - mkdir -p ~/.ethash
+  - mkdir -p ~/.ethash
   - geth makedag 0 ~/.ethash
   - node tests/scripts/setupGeth.js
 script:
