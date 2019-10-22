@@ -2,20 +2,16 @@
 
 // Load external packages
 const Chai = require('chai'),
-  assert = Chai.assert,
-  rootPrefix = '../../../..',
-  OSTBase = require(rootPrefix + '/index'),
-  OstWeb3 = OSTBase.OstWeb3,
-  Logger = OSTBase.Logger,
-  OstWeb3Pool = OSTBase.OstWeb3Pool,
-  PoolFactory = OstWeb3Pool.Factory,
-  gethManager = require(rootPrefix + '/tests/helpers/geth_manager'),
-  logger = new Logger('Web3PoolTestCases', Logger.LOG_LEVELS.INFO),
-  // Provider classes.
-  OstWSProvider = OSTBase.OstWeb3.OstWSProvider,
-  // End-Points
+  assert = Chai.assert;
+
+const rootPrefix = '../../../..',
+  PoolFactory = require(rootPrefix + '/lib/web3Pool/ostWeb3PoolFactory'),
+  gethManager = require(rootPrefix + '/tests/helpers/gethManager'),
+  OstWeb3 = require(rootPrefix + '/lib/web3/ostWeb3'),
+  Logger = require(rootPrefix + '/lib/logger/CustomConsoleLogger'),
+  logger = new Logger('OstWeb3TestCases'),
   wsEndPoint = gethManager.getWebSocketEndPoint(),
-  describePrefix = 'lib/web3_pool/ost_web3_pool_factory';
+  describePrefix = 'lib/web3Pool/ostWeb3PoolFactory';
 
 // Some Constants. All times are in milliseconds.
 const avg_block_time = 8000 /* Avg time required to mine a block */,

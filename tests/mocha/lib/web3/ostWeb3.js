@@ -1,23 +1,21 @@
 'use strict';
 
-// Load external packages
 const Chai = require('chai'),
   assert = Chai.assert,
-  rootPrefix = '../../../..',
-  OSTBase = require(rootPrefix + '/index'),
-  Logger = OSTBase.Logger,
-  Web3 = OSTBase.Web3,
-  OstWeb3 = OSTBase.OstWeb3,
-  gethManager = require(rootPrefix + '/tests/helpers/geth_manager'),
-  logger = new Logger('OstWeb3TestCases', Logger.LOG_LEVELS.INFO),
-  // Provider classes.
+  Web3 = require('web3'),
   HttpProvider = require('web3-providers-http'),
-  WebsocketProvider = require('web3-providers-ws'),
-  OstWSProvider = OSTBase.OstWeb3.OstWSProvider,
-  // End-Points
+  WebsocketProvider = require('web3-providers-ws');
+
+// Load external packages
+const rootPrefix = '../../../..',
+  OstWeb3 = require(rootPrefix + '/lib/web3/ostWeb3'),
+  OstWSProvider = require(rootPrefix + '/lib/web3/ostWeb3ProvidersWs'),
+  gethManager = require(rootPrefix + '/tests/helpers/gethManager'),
+  Logger = require(rootPrefix + '/lib/logger/CustomConsoleLogger'),
+  logger = new Logger('OstWeb3TestCases'),
   httpEndPoint = gethManager.getHttpEndPoint(),
   wsEndPoint = gethManager.getWebSocketEndPoint(),
-  describePrefix = 'lib/ost_web3/ost-web3';
+  describePrefix = 'lib/web3/ostWeb3';
 
 // Some Constants. All times are in milliseconds.
 const avg_block_time = 8000 /* Avg time required to mine a block */,
@@ -204,7 +202,7 @@ const startGethTestGroup = function() {
         assert.isOk(true);
       })
       .catch(function(reason) {
-        logger.error('Failed to start geth. reason', reason);
+        logger.trace('Failed to start geth. reason', reason);
         assert.isOk(false, 'Failed to start geth.');
       });
   };

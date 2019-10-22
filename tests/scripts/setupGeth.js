@@ -5,7 +5,7 @@ const Web3 = require('web3'),
   fs = require('fs'),
   { spawn } = require('child_process'),
   rootPrefix = '../..',
-  gethManager = require(rootPrefix + '/tests/helpers/geth_manager');
+  gethManager = require(rootPrefix + '/tests/helpers/gethManager');
 
 let gethSetupConfig = gethManager.getGethSetupConfig(),
   httpEndPoint = gethManager.getHttpEndPoint(),

@@ -71,6 +71,7 @@ GethManager.prototype = {
   gethProcess: null,
   isAlive: function() {
     const oThis = this;
+    console.log('oThis.gethProcess------------', oThis.gethProcess);
     if (!oThis.gethProcess) {
       console.log('[GETH-isAlive] oThis.gethProcess is null');
       return false;

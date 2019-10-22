@@ -1,29 +1,29 @@
 {
-  "name": "@ostdotcom/base",
-  "version": "1.0.0",
-  "description": "OST Base provides advanced blockchain interaction capabilities and other utilities.",
+  "name": "@ostdotcom/xweb3",
+  "version": "1.0.0-beta.1",
+  "description": "Ethereum interaction layer using extended version of web3.",
   "main": "index.js",
   "scripts": {
     "pre-commit": "lint-staged"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ostdotcom/base.git"
+    "url": "https://github.com/ostdotcom/xweb3.git"
   },
   "keywords": [
     "OpenST",
     "OST",
     "Simple Token",
-    "OST Base"
+    "xweb3"
   ],
   "author": "OST.com Inc.",
   "license": "LGPL-3.0",
   "bugs": {
-    "url": "https://github.com/ostdotcom/base/issues"
+    "url": "https://github.com/ostdotcom/xweb3/issues"
   },
-  "homepage": "https://github.com/ostdotcom/base#readme",
+  "homepage": "https://github.com/ostdotcom/xweb3#readme",
   "dependencies": {
-    "shortid": "2.2.13",
+    "@ostdotcom/base": "1.0.1-beta.1",
     "web3": "1.0.0-beta.37"
   },
   "devDependencies": {
