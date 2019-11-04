@@ -7,7 +7,6 @@ sudo: required
 branches:
   only:
   - master
-  - test_cases_fix
 notifications:
   email:
     recipients:
