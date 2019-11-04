@@ -1,7 +1,7 @@
 # xweb3
-Ethereum interaction layer using extended version of web3.
-[![Build Status](https://travis-ci.org/ostdotcom/base.svg?branch=develop)](https://travis-ci.org/ostdotcom/base)
-![npm version](https://img.shields.io/npm/v/@ostdotcom/base.svg?style=flat)
+Ethereum interaction layer by extending web3.js
+[![Build Status](https://travis-ci.org/ostdotcom/xweb3.svg?branch=master)](https://travis-ci.org/ostdotcom/xweb3)
+![npm version](https://img.shields.io/npm/v/@ostdotcom/xweb3.svg?style=flat)
 
 # Install
 
