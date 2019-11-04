@@ -24,6 +24,7 @@ before_install:
   - sudo apt-get update
   - sudo bash tests/scripts/install_geth_1_8_20.sh
   - geth version
+  - rm -rf node_modules package-lock.json
 install:
   - npm install
 before_script:
