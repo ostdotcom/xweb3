@@ -26,7 +26,7 @@
   "homepage": "https://github.com/ostdotcom/xweb3#readme",
   "dependencies": {
     "@ostdotcom/base": "1.0.1-beta.1",
-    "web3": "1.2.2"
+    "web3": "1.2.1"
   },
   "devDependencies": {
     "chai": "4.2.0",
