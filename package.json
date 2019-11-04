@@ -1,7 +1,7 @@
 {
   "name": "@ostdotcom/xweb3",
   "version": "1.0.0-beta.1",
-  "description": "Ethereum interaction layer using extended version of web3.",
+  "description": "Ethereum interaction layer by extending web3.js",
   "main": "index.js",
   "scripts": {
     "pre-commit": "lint-staged"
@@ -14,7 +14,9 @@
     "OpenST",
     "OST",
     "Simple Token",
-    "xweb3"
+    "web3.js",
+    "Socket Connection Pool",
+    "Socket Heartbeat"
   ],
   "author": "OST.com Inc.",
   "license": "LGPL-3.0",
