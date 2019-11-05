@@ -5,7 +5,7 @@ const rootPrefix = '.',
   OstWeb3 = require(rootPrefix + '/lib/web3/ostWeb3'),
   //OstWSProvider   = require( rootPrefix + '/lib/web3/ostWeb3ProvidersWs' ),
   Web3PoolFactory = require(rootPrefix + '/lib/web3Pool/ostWeb3PoolFactory'),
-  Web3Pool = require(rootPrefix + '/lib/web3Pool/ostWeb3Pool');
+  Web3Pool = require(rootPrefix + '/lib/web3Pool/OstWeb3Pool');
 
 module.exports = {
   Web3: Web3,
