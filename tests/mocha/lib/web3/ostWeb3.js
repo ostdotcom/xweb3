@@ -9,7 +9,7 @@ const Chai = require('chai'),
 // Load external packages
 const rootPrefix = '../../../..',
   OstWeb3 = require(rootPrefix + '/lib/web3/ostWeb3'),
-  OstWSProvider = require(rootPrefix + '/lib/web3/ostWeb3ProvidersWs'),
+  OstWSProvider = require(rootPrefix + '/lib/web3/OstWeb3ProvidersWs'),
   gethManager = require(rootPrefix + '/tests/helpers/gethManager'),
   Logger = require(rootPrefix + '/lib/logger/CustomConsoleLogger'),
   logger = new Logger('OstWeb3TestCases'),
