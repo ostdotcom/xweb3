@@ -8,14 +8,14 @@ const Chai = require('chai'),
 
 // Load external packages
 const rootPrefix = '../../../..',
-  OstWeb3 = require(rootPrefix + '/lib/web3/ostWeb3'),
+  OstWeb3 = require(rootPrefix + '/lib/web3/OstWeb3'),
   OstWSProvider = require(rootPrefix + '/lib/web3/OstWeb3ProvidersWs'),
   gethManager = require(rootPrefix + '/tests/helpers/gethManager'),
   Logger = require(rootPrefix + '/lib/logger/CustomConsoleLogger'),
   logger = new Logger('OstWeb3TestCases'),
   httpEndPoint = gethManager.getHttpEndPoint(),
   wsEndPoint = gethManager.getWebSocketEndPoint(),
-  describePrefix = 'lib/web3/ostWeb3';
+  describePrefix = 'lib/web3/OstWeb3';
 
 // Some Constants. All times are in milliseconds.
 const avg_block_time = 8000 /* Avg time required to mine a block */,
