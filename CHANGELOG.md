@@ -1,2 +1,2 @@
 ## Base v1.0.0
-- Migrated web3.js extended code from base repository.
+- Migrated web3.js extended code from ([base repository](https://github.com/ostdotcom/base))
